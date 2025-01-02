@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "643149547576",
+    "firebase_url": "https://smart-greenhouse-powered-by-ai-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "smart-greenhouse-powered-by-ai",
+    "storage_bucket": "smart-greenhouse-powered-by-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643149547576:android:f62a2f648ae01d4e487ecd",
+        "android_client_info": {
+          "package_name": "com.example.moblieapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVEQPkRv216hY7p5Cb3Z_kQg5KboGpzRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

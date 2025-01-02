@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Switch
+            android:id="@+id/auto_fan"
+            android:text="Auto Turn On Fan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/auto_light"
+            android:text="Auto Turn On Led"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/auto_watering"
+            android:text="Auto Watering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/auto_watering_nutri"
+            android:text="Auto Watering With Fertilizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="8"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+
+        <!-- Time Start Fan -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Start Fan:"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="false"
+                android:inputType="time"
+                android:id="@+id/timeStartFan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Time Finish Fan -->
+        <LinearLayout
+            android:contextClickable="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Finish Fan:"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="false"
+                android:id="@+id/timeFinishFan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="time"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="8dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/apply_time_fan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Set" />
+        </LinearLayout>
+
+
+        <!-- Time Start Lighting -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time Start Lighting:"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="false"
+                android:id="@+id/timeStartLighting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="time"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Time Finish Lighting -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Finish Lighting:"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="false"
+                android:id="@+id/timeFinishLighting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="time"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/apply_time_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Set" />
+        </LinearLayout>
+
+        <!-- Time Start Watering -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Start Watering:"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="false"
+                android:id="@+id/timeStartWatering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="time"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Time Finish Watering -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Finish Watering:"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="false"
+                android:id="@+id/timeFinishWatering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="time"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/apply_time_wattering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Set" />
+        </LinearLayout>
+
+        <!-- Time Start Watering Nutri -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Start Watering Fertilizer"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="false"
+                android:id="@+id/timeStartWateringNutri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="time"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Time Finish Watering Nutri -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Finish Watering Fertilizer"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="false"
+                android:id="@+id/timeFinishWateringNutri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="time"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/apply_time_wattering_nutri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Set" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

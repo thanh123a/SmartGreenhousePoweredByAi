@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:context=".fragment.AiChatBotFragment">
+
+    <!-- AI ChatBot Title -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI ChatBot"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/green" />
+
+            <!-- EditText for user to ask the chatbot -->
+            <EditText
+                android:id="@+id/chat_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ask me anything..."
+                android:layout_margin="30dp"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:background="@drawable/custom_edittext"
+                />
+
+            <!-- Button to submit the input -->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ask"
+        android:textSize="18sp"
+        android:backgroundTint="@color/green"
+        app:cornerRadius = "20dp"/>
+
+</LinearLayout>

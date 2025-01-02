@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MobileApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/green</item>
+    </style>
+
+    <style name="Theme_Action_Bar" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/green</item>
+    </style>
+</resources>
